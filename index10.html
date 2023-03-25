@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function findlongestword(str){
+  let arr=str.split(' ');
+  let arr2=arr .sort();
+  console.log(arr2);
+  var longestword=0;
+  let large="";
+  arr2.forEach(element => {
+    if(element.length>longestword){
+     longestword= element.length;
+      large=([element]);
+    }
+  });
+  return large;
+} 
+console.log(findlongestword("i love y india")) 
+</script>
+</body>
+</html>
