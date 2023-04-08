@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #printbtn{
+            padding: 10px 20px;
+            background-color: rgb(194, 116, 13);
+            color: aqua;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <a name="" id="printbtn" class="btn btn-primary" href="#" role="button">Print</a>
+    <script>
+        const printbtn=document.getElementById('printbtn');
+        printbtn.addEventListener('click', ()=>{
+            window.print();
+        });
+    </script>
+</body>
+</html>

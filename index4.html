@@ -11,30 +11,34 @@
 <body>
     <script>
        
-        function swapCase(text) {
-            var newLetters = "";
-            for (var i = 0; i < text.length; i++) {
-                if (text[i] === text[i].toLowerCase()) {
-                    newLetters += text[i].toUpperCase();
-                } else {
-                    newLetters += text[i].toLowerCase();
-                }
-            }
+        // function swapCase(text) {
+        //     var newLetters = "";
+        //     for (var i = 0; i < text.length; i++) {
+        //         if (text[i] === text[i].toLowerCase()) {
+        //             newLetters += text[i].toUpperCase();
+        //         } else {
+        //             newLetters += text[i].toLowerCase();
+        //         }
+        //     }
 
-            return newLetters;
-        }
-        var text = prompt("enter the string")
-        var swappedText = swapCase(text);
-        function reverseString(str) {
-            let newString = "";
-            for (let i = str.length - 1; i >= 0; i--) {
-                newString += str[i];
-            }
-            return newString;
-        } const result = reverseString(swappedText);
-        console.log(result);
+        //     return newLetters;
+        // }
+        // var text = prompt("enter the string")
+        // var swappedText = swapCase(text);
+        // function reverseString(str) {
+        //     let newString = "";
+        //     for (let i = str.length - 1; i >= 0; i--) {
+        //         newString += str[i];
+        //     }
+        //     return newString;
+        // } const result = reverseString(swappedText);
+        // console.log(result);
 
+        let str="nishant";
+        let str2=str.split('').reverse().join('');
+        console.log(str2)
     </script>
+
 
 </body>
 

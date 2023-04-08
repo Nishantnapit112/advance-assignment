@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     let arr4=[1,2,3,4,5]
+    //     //console.log(arr4)
+    //     let arr=[1,2,3,4,5]
+    //     let arr2=arr.reverse();
+    //    // console.log(arr2);
+    //     arr2.shift();
+    //    // console.log(arr2)
+    //     let ankit=arr4.concat(arr2);
+    //     console.log(ankit);
+    //--------------------------------------------------------------------------------------------------------------
+    // let num1=parseInt(prompt("enter the no"))
+    // let num2=parseInt(prompt("enter the no"))
+    // let num3=parseInt(prompt("enter the no"))
+    // var product=num1*num2;
+    // var product2=product*num3;
+    // if(product>0){
+    //     console.log("the sign is :+");
+
+    // }
+    // else{
+    //     console.log( "the sign is :-");
+    // }
+// ?---------------------------------------------------------------------------------------------------------------------------let 
+let email="nishantnapit@gmail.com"
+function protect(email){
+    var splited=email.split("@");
+    console.log(splited);
+    var part1=splited[0];
+   console.log(part1)
+   let avg=part1.length/2;
+   console.log(avg);
+  part1=part1.substring(0,(part1.length-avg));
+  part2=splited[1];
+  return part1+"....@"+part2;
+
+   };
+
+
+ let protect3=protect(email);
+ console.log(protect3);  
+
+   
+    
+</script>
+    
+</body>
+</html>

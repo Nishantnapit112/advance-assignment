@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+    <p>please click here in order to check the terms and conditions </p>
+    <button id="readbtn">read</button>
+    <script>
+        $(document).ready(function(){
+            $('#readbtn').click(function(){
+                window.open("popup2.html","popup","height=200,width=400,top=100,left=100,toolbar=no,location=no");
+            });
+
+        });
+    </script>
+</body>
+</html>

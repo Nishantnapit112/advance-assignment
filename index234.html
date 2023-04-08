@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      label{
+        display: block;
+        margin-bottom: 20px;
+      }
+      input[type="text"]{
+        padding: 5px;
+        font-size: 16px;
+
+      }
+      .error{
+        color: red;
+        margin-top: 5px;
+        font-size: 16px;
+      }
+    </style>
+</head>
+<body>
+   <form>
+    <label for="numeric-value">enter a numeric value:</label>
+    <input type="text" id="numeric-value" name="numeric-value" autofocus>
+    <div id="numeric-value-error" class="error"></div>
+    <button type="button" onclick="checknumericvalue()">check value</button>
+</form>
+<script>
+    function checknumericvalue(){
+        var numericvalue=document.getElementById("numeric-value").value;
+        var numericvalueerror=document.getElementById("numeric-value-error");
+        var numericregex=/^[0-9]+$/;
+        if(numericvalue===""){
+            numericvalueerror.innerHTML="please enter any numeric value";
+            document.getElementById("numeric-value").focus();
+
+        }
+        else if(!numericregex.test(numericvalue)){
+            numericvalueerror.innerhtml="only numeric value are allowed ";
+            document.getElementById("numericvalue").focus();
+
+        }else{
+            numericvalueerror.innerHTML="entered value is numeric";
+        }
+    }
+</script>
+</body>
+</html>

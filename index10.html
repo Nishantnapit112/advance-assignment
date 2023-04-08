@@ -10,11 +10,11 @@
 <script>
 function findlongestword(str){
   let arr=str.split(' ');
-  let arr2=arr .sort();
-  console.log(arr2);
+  //let arr2=arr .sort();
+  console.log(arr);
   var longestword=0;
   let large="";
-  arr2.forEach(element => {
+  arr.forEach(element => {
     if(element.length>longestword){
      longestword= element.length;
       large=([element]);
@@ -22,7 +22,7 @@ function findlongestword(str){
   });
   return large;
 } 
-console.log(findlongestword("i love y india")) 
+console.log(findlongestword("i love my india")) 
 </script>
 </body>
 </html>

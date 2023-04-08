@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+            padding: 10px;
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+           
+        }
+        .red{
+            background-color: #f00;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .show{
+            display: block;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div clas="container">
+        <div class="box red">red box
+           
+        </div>
+        <button class="show-button red" onclick="showbox('red')">show</button>
+        <button class="hide-button red" onclick="hidebox('red')">hide</button>
+
+
+
+        <div class="box green">green box
+        </div>
+        <button class="show-button green" onclick="showbox('green')">show</button>
+        <button class="hide-button green" onclick="hidebox('green')">hide</button>
+
+
+        <div class="box blue">blue box
+           
+        </div>
+        <button class="show-button blue" onclick="showbox('blue')">show</button>
+        <button class="hide-button blue" onclick="hidebox('blue')">hide</button>
+        
+    </div>
+    <script>
+        function showbox(box){
+            document.querySelector(`.${box}`).style.display = "block";;
+        }
+        function hidebox(box){
+            document.querySelector(`.${box}`).style.display = "none";;
+        }
+    </script>
+</body>
+</html>

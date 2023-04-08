@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str=["undefined",0,34,"null",55,64,true,false,NaN,-12];
+
+        let arr2=str.sort();
+      
+    console.log(arr2);
+    arr3=[];
+    
+    str.forEach(element => {
+    
+        
+
+       if(typeof element == "number" && element.toString() != "NaN"){
+        arr3.push(element)
+       } 
+    });
+    
+    console.log(arr3);
+
+
+    // var obj = [ 
+    //     a = 3,
+    //     b = 4,
+    //     c = 5 
+    // ]
+
+    
+    // obj.forEach((element , idx)=> {
+    //     element = element*3;
+    // });
+
+    </script>
+</body>
+</html>

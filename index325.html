@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <style>
+        .contact input{
+            margin-bottom: 10px;
+        }
+        .remove-contact{
+            margin-left: 10px;
+            color:red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="add-to-contact">add to contact</a>
+    <div id="contact-container"></div>
+    <script>
+     $(document).ready(function(){
+        var contactcount=0;
+        $("#add-to-contact").click(function(){
+            var contactID="contact-"+contactcount;
+            var contactInput=$("<input>",{
+                class:"contact-input",        
+                id:contactID,
+                type:"text"
+            });
+            $("#contact-container").append(contactInput);
+
+            var removebutton=$("<span>",{
+                class:"remove-contact",
+                text:"x"
+            }).click(function(){
+                $('#'+contactID).remove();
+                $(this).remove();
+            });
+            $("#" + contactID).after(removebutton);
+            contactcount++;
+            return false;
+        });
+     });
+    </script>
+    
+</body>
+</html>
